@@ -16,12 +16,19 @@ public class DigimonApplication {
 		DigimonClient digimonClient = new DigimonClient();
 		List<Digimon> listaDigimon = digimonClient.listar();
 
-		for(Digimon digimon : listaDigimon) {
+		/*for(Digimon digimon : listaDigimon) {
 			System.out.print("--"+digimon.getName());
-			System.out.println(" "+digimon.getLevel());
+			System.out.println(" "+digimon.getLevel());*/
 
-		
+			
+
+			for (Digimon digimon : listaDigimon) {
+
+				if (digimon.getLevel().equals("Champion")) {
+					System.out.print("--" + digimon.getName());
+					System.out.println(" " + digimon.getLevel());
 	
+				}
 
 		
 	}
