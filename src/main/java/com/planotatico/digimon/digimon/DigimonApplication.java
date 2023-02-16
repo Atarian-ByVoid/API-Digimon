@@ -17,37 +17,49 @@ public class DigimonApplication {
 		DigimonClient digimonClient = new DigimonClient();
 		List<Digimon> listaDigimon = digimonClient.listar();
 
-		//Foi usado um Scanner para que o usuario possa digitar o level do Digimon, para realizar a rapida consulta!
-		
-		System.out.print("Level disponiveis para consulta ------ In Training | Rookie | Champion | Ultimate | Mega | Fresh ");
+		/*
+		 * Foi usado um Scanner para que o usuario possa digitar o level do Digimon,
+		 * para realizar a rapida consulta!
+		 */
+		System.out.print(
+				"Level disponiveis para consulta ------ In Training | Rookie | Champion | Ultimate | Mega | Fresh ");
 
 		try (Scanner scanner = new Scanner(System.in)) {
 			String resposta = scanner.next();
-			
+
 			System.out.print("Escolha o level do Digimon: ");
 			resposta = scanner.next();
 
-			for (Digimon digimon : listaDigimon) { //Aqui onde havera um retorno de uma lista de level dos Digimons!
+			/*
+			 * Aqui onde haverá um retorno de uma lista de level dos Digimons, com base no
+			 * que foi escolhido pelo usuario !
+			 */
+			for (Digimon digimon : listaDigimon) {
 
-				if (digimon.getLevel().equals(resposta)) {  
+				if (digimon.getLevel().equals(resposta)) {
+
 					System.out.print("--" + digimon.getName());
-					System.out.println(" " + digimon.getLevel());
+					System.out.println(" Lvl." + digimon.getLevel());
 
 				}
 
-				/*
-				 * ---- Lista o Level e o nome do Digimon----
-				 * 
-				 * for(Digimon digimon : listaDigimon) {
-				 * System.out.print("--NOME: "+digimon.getName()+" ____ ");
-				 * System.out.println(" Lvl."+digimon.getLevel());
-				 * 
-				 * 
-				 * ---- Lista o Level selecionado do Digimon----
-				 * 
-				 */
+			}
+			System.out.println("---------------!!SUA BUSCA TERMINA AQUI!!---------------");
+			System.out.println();
+
+			/* Será listado a seguir todos os digimons */
+
+			System.out
+					.println("______________________LISTA DE TODOS OS DIGIMONS____________________________");
+			System.out.println();
+
+			for (Digimon digimon : listaDigimon) {
+
+				System.out.print("--NOME: " + digimon.getName());
+				System.out.println(" ___ Lvl." + digimon.getLevel());
 
 			}
+
 		}
 
 	}
