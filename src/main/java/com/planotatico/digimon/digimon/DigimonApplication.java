@@ -25,7 +25,7 @@ public class DigimonApplication {
 				"Level disponiveis para consulta ------ In Training | Rookie | Champion | Ultimate | Mega | Fresh ");
 
 		try (Scanner scanner = new Scanner(System.in)) {
-			String resposta = scanner.next();
+			String resposta = scanner.nextLine();
 
 			System.out.print("Escolha o level do Digimon: ");
 			resposta = scanner.next();
