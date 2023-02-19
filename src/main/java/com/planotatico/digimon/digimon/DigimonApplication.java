@@ -33,7 +33,7 @@ public class DigimonApplication {
 			
 		/*
 		 * Foi usado um Scanner para que o usuario possa digitar o level do Digimon,
-		 * para realizar a rapida consulta!
+		 * para realizar a rápida consulta!
 		 */
 		System.out.print("Level disponiveis para consulta --- In Training | Rookie | Champion | Ultimate | Mega | Fresh --- Pressione ENTER para continuar");
 
@@ -57,7 +57,7 @@ public class DigimonApplication {
 			}
 
 		}
-		System.out.println("---------------!!SUA BUSCA TERMINA AQUI!!---------------");
+		System.out.println("--------------!!SUA BUSCA TERMINA AQUI!!--------------");
 
 		}
 
