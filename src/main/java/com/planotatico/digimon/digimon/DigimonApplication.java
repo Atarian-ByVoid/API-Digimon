@@ -35,13 +35,13 @@ public class DigimonApplication {
 		 * Foi usado um Scanner para que o usuario possa digitar o level do Digimon,
 		 * para realizar a rápida consulta!
 		 */
-		System.out.print("Level disponiveis para consulta --- In Training | Rookie | Champion | Ultimate | Mega | Fresh --- Pressione ENTER para continuar");
+		System.out.print("Levels disponiveis para consulta --- In Training | Training | Rookie | Champion | Ultimate | Mega | Fresh | Armor --- Pressione ENTER para continuar");
 
 	try (Scanner scanner = new Scanner(System.in)) {
 		String resposta = scanner.nextLine();
 
 		System.out.print("Escolha o level do Digimon: ");
-		resposta = scanner.next();
+		resposta = scanner.nextLine();
 
 		/*
 		 * Aqui onde haverá um retorno de uma lista de level dos Digimons, com base no
