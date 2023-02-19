@@ -20,7 +20,7 @@ public class DigimonApplication {
 		
 			/* Será listado a seguir todos os digimons */
 
-			System.out.println("______________________LISTA DE TODOS OS DIGIMONS____________________________");
+			System.out.println("|______________________LISTA DE TODOS OS DIGIMONS____________________________|");
 			System.out.println();
 
 			for (Digimon digimon : listaDigimon) {
