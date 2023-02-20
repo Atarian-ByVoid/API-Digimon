@@ -11,26 +11,27 @@ import com.planotatico.digimon.digimon.client.domain.Digimon;
 
 @SpringBootApplication
 public class DigimonApplication {
-
+	
 	public static void main(String[] args) throws ParseException {
+
 
 		DigimonClient digimonClient = new DigimonClient();
 		List<Digimon> listaDigimon = digimonClient.listar();
 
-		
 			/* Será listado a seguir todos os digimons */
 
 			System.out.println("|______________________LISTA DE TODOS OS DIGIMONS____________________________|");
 			System.out.println();
 
-			for (Digimon digimon : listaDigimon) {
-
+		
+			for (Digimon digimon : listaDigimon){
 				System.out.print("--NOME: " + digimon.getName());
 				System.out.println(" ___ Lvl." + digimon.getLevel());
+				
 
 			}
+
 			System.out.println();
-			
 		/*
 		 * Foi usado um Scanner para que o usuario possa digitar o level do Digimon,
 		 * para realizar a rápida consulta!
