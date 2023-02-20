@@ -13,12 +13,11 @@ import com.planotatico.digimon.digimon.client.domain.Digimon;
 public class DigimonApplication {
 	
 	public static void main(String[] args) throws ParseException {
-		System.out.println("\n"+"|______________________LISTA DE TODOS OS DIGIMONS____________________________|"+"\n");
 		DigimonClient digimonClient = new DigimonClient();
 		List<Digimon> listaDigimon = digimonClient.listar();
 
 			/* Será listado a seguir todos os digimons */
-
+			System.out.println("\n"+"|______________________LISTA DE TODOS OS DIGIMONS____________________________|"+"\n");
 			for (Digimon digimon : listaDigimon){
 				System.out.println("--NOME: " + digimon.getName()+" ___ Lvl." + digimon.getLevel());
 			
@@ -33,7 +32,7 @@ public class DigimonApplication {
 	try (Scanner scanner = new Scanner(System.in)) {
 		String resposta = scanner.nextLine();
 
-		System.out.print("Escolha o level do Digimon:");
+		System.out.print("\nESCOLHA O LEVEL DO DIGIMON o level do Digimon: ");
 		resposta = scanner.nextLine();
 
 		/*
@@ -44,12 +43,12 @@ public class DigimonApplication {
 
 			if (digimon.getLevel().equals(resposta)) {
 
-				System.out.println("--" + digimon.getName()+" Lvl."+digimon.getLevel());
+				System.out.println("-- " + digimon.getName()+" ___ Lvl."+digimon.getLevel());
 
 			}
 
 		}
-		System.out.println("--------------!!SUA BUSCA TERMINA AQUI!!--------------");
+		System.out.println("\n--------------!!SUA BUSCA TERMINA AQUI!!--------------");
 
 		}
 
