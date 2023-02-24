@@ -1,12 +1,12 @@
 # API-Digimon
+ API de https://shadowsmith.com/. Este sistemas é capaz de realizar buscas de diferentes Digimons e Levels dos mesmos! 
 
-API de https://shadowsmith.com/. Este sistemas é capaz de realizar buscas de diferentes Digimons e Levels dos mesmos! 
+# DIGIMONS DISPONIVEIS PARA A CONSULTA
+ Rookie, Champion, Mega, Ultimate, Armor, Fresh, Training, In Training
 
-# DIGIMONS DISPONIVEIS PARA A CONSULTA, já separados em ordem afabética com seus respectiveis Levels 🦄
-
+#DIGIMON
+ já separados em ordem afabética com seus respectiveis Levels 🦄
 Percebe-se que os Digimons são classificados por Levels, representados com:
-
-Rookie, Champion, Mega, Ultimate, Armor, Fresh, Training, In Training
 
 - Agumon ___ Lvl.Rookie
 - Airdramon ___ Lvl.Champion
